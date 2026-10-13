@@ -1,0 +1,327 @@
+{
+  "design": "eight fixed firms, two latest text-covered original filings each, revenue and capex",
+  "checks": 32,
+  "matched": 32,
+  "rows": [
+    {
+      "ticker": "WMT",
+      "fiscal_end": "2023-01-31",
+      "accession": "0000104169-23-000020",
+      "field": "revenue",
+      "tag": "Revenues",
+      "panel_usd": 611289000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 2
+    },
+    {
+      "ticker": "WMT",
+      "fiscal_end": "2023-01-31",
+      "accession": "0000104169-23-000020",
+      "field": "capex",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "panel_usd": 16857000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 2
+    },
+    {
+      "ticker": "WMT",
+      "fiscal_end": "2024-01-31",
+      "accession": "0000104169-24-000056",
+      "field": "revenue",
+      "tag": "Revenues",
+      "panel_usd": 648125000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 2
+    },
+    {
+      "ticker": "WMT",
+      "fiscal_end": "2024-01-31",
+      "accession": "0000104169-24-000056",
+      "field": "capex",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "panel_usd": 20606000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 1
+    },
+    {
+      "ticker": "TGT",
+      "fiscal_end": "2023-01-28",
+      "accession": "0000027419-23-000015",
+      "field": "revenue",
+      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "panel_usd": 109120000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 2
+    },
+    {
+      "ticker": "TGT",
+      "fiscal_end": "2023-01-28",
+      "accession": "0000027419-23-000015",
+      "field": "capex",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "panel_usd": 5528000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 1
+    },
+    {
+      "ticker": "TGT",
+      "fiscal_end": "2024-02-03",
+      "accession": "0000027419-24-000032",
+      "field": "revenue",
+      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "panel_usd": 107412000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 2
+    },
+    {
+      "ticker": "TGT",
+      "fiscal_end": "2024-02-03",
+      "accession": "0000027419-24-000032",
+      "field": "capex",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "panel_usd": 4806000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 1
+    },
+    {
+      "ticker": "NKE",
+      "fiscal_end": "2023-05-31",
+      "accession": "0000320187-23-000039",
+      "field": "revenue",
+      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "panel_usd": 51217000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 5
+    },
+    {
+      "ticker": "NKE",
+      "fiscal_end": "2023-05-31",
+      "accession": "0000320187-23-000039",
+      "field": "capex",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "panel_usd": 969000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 1
+    },
+    {
+      "ticker": "NKE",
+      "fiscal_end": "2024-05-31",
+      "accession": "0000320187-24-000044",
+      "field": "revenue",
+      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "panel_usd": 51362000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 4
+    },
+    {
+      "ticker": "NKE",
+      "fiscal_end": "2024-05-31",
+      "accession": "0000320187-24-000044",
+      "field": "capex",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "panel_usd": 812000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 1
+    },
+    {
+      "ticker": "BBY",
+      "fiscal_end": "2023-01-28",
+      "accession": "0000764478-23-000006",
+      "field": "revenue",
+      "tag": "Revenues",
+      "panel_usd": 46298000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 2
+    },
+    {
+      "ticker": "BBY",
+      "fiscal_end": "2023-01-28",
+      "accession": "0000764478-23-000006",
+      "field": "capex",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "panel_usd": 930000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 2
+    },
+    {
+      "ticker": "BBY",
+      "fiscal_end": "2024-02-03",
+      "accession": "0000764478-24-000010",
+      "field": "revenue",
+      "tag": "Revenues",
+      "panel_usd": 43452000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 2
+    },
+    {
+      "ticker": "BBY",
+      "fiscal_end": "2024-02-03",
+      "accession": "0000764478-24-000010",
+      "field": "capex",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "panel_usd": 795000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 1
+    },
+    {
+      "ticker": "CAT",
+      "fiscal_end": "2023-12-31",
+      "accession": "0000018230-24-000009",
+      "field": "revenue",
+      "tag": "Revenues",
+      "panel_usd": 67060000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 3
+    },
+    {
+      "ticker": "CAT",
+      "fiscal_end": "2023-12-31",
+      "accession": "0000018230-24-000009",
+      "field": "capex",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "panel_usd": 1597000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 1
+    },
+    {
+      "ticker": "CAT",
+      "fiscal_end": "2024-12-31",
+      "accession": "0000018230-25-000008",
+      "field": "revenue",
+      "tag": "Revenues",
+      "panel_usd": 64809000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 4
+    },
+    {
+      "ticker": "CAT",
+      "fiscal_end": "2024-12-31",
+      "accession": "0000018230-25-000008",
+      "field": "capex",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "panel_usd": 1988000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 1
+    },
+    {
+      "ticker": "DE",
+      "fiscal_end": "2023-10-29",
+      "accession": "0001558370-23-019812",
+      "field": "revenue",
+      "tag": "Revenues",
+      "panel_usd": 61251000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 5
+    },
+    {
+      "ticker": "DE",
+      "fiscal_end": "2023-10-29",
+      "accession": "0001558370-23-019812",
+      "field": "capex",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "panel_usd": 1498000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 1
+    },
+    {
+      "ticker": "DE",
+      "fiscal_end": "2024-10-27",
+      "accession": "0001558370-24-016169",
+      "field": "revenue",
+      "tag": "Revenues",
+      "panel_usd": 51716000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 5
+    },
+    {
+      "ticker": "DE",
+      "fiscal_end": "2024-10-27",
+      "accession": "0001558370-24-016169",
+      "field": "capex",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "panel_usd": 1640000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 1
+    },
+    {
+      "ticker": "GD",
+      "fiscal_end": "2023-12-31",
+      "accession": "0000040533-24-000007",
+      "field": "revenue",
+      "tag": "Revenues",
+      "panel_usd": 42272000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 1
+    },
+    {
+      "ticker": "GD",
+      "fiscal_end": "2023-12-31",
+      "accession": "0000040533-24-000007",
+      "field": "capex",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "panel_usd": 904000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 1
+    },
+    {
+      "ticker": "GD",
+      "fiscal_end": "2024-12-31",
+      "accession": "0000040533-25-000008",
+      "field": "revenue",
+      "tag": "Revenues",
+      "panel_usd": 47716000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 1
+    },
+    {
+      "ticker": "GD",
+      "fiscal_end": "2024-12-31",
+      "accession": "0000040533-25-000008",
+      "field": "capex",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "panel_usd": 916000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 1
+    },
+    {
+      "ticker": "NOC",
+      "fiscal_end": "2023-12-31",
+      "accession": "0001133421-24-000006",
+      "field": "revenue",
+      "tag": "Revenues",
+      "panel_usd": 39290000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 5
+    },
+    {
+      "ticker": "NOC",
+      "fiscal_end": "2023-12-31",
+      "accession": "0001133421-24-000006",
+      "field": "capex",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "panel_usd": 1775000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 1
+    },
+    {
+      "ticker": "NOC",
+      "fiscal_end": "2024-12-31",
+      "accession": "0001133421-25-000006",
+      "field": "revenue",
+      "tag": "Revenues",
+      "panel_usd": 41033000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 5
+    },
+    {
+      "ticker": "NOC",
+      "fiscal_end": "2024-12-31",
+      "accession": "0001133421-25-000006",
+      "field": "capex",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "panel_usd": 1767000000.0,
+      "matched_inline_xbrl": true,
+      "candidate_count": 1
+    }
+  ]
+}

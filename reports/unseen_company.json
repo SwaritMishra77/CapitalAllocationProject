@@ -1,0 +1,45 @@
+{
+  "description": "unseen-company numerical robustness, not the primary text hypothesis",
+  "rule": "SHA-256 CIK sort, first 10 in each of retail and manufacturing",
+  "heldout_ciks": [
+    "0000012927",
+    "0000018230",
+    "0000018498",
+    "0000037996",
+    "0000049826",
+    "0000066740",
+    "0000075362",
+    "0000076334",
+    "0000098362",
+    "0000354950",
+    "0000815556",
+    "0000909832",
+    "0000935703",
+    "0001018840",
+    "0001057060",
+    "0001089063",
+    "0001177609",
+    "0001368458",
+    "0001411207",
+    "0001646972"
+  ],
+  "counts": {
+    "train": 591,
+    "validation": 73,
+    "test": 29,
+    "test_companies": 20
+  },
+  "persistence": {
+    "n": 29,
+    "mae_pp": 0.4516546760896558,
+    "rmse_pp": 0.6506971299665171
+  },
+  "numeric_residual_ridge": {
+    "n": 29,
+    "mae_pp": 0.559420859758339,
+    "rmse_pp": 0.7455715264294583
+  },
+  "ridge_validation_choice": {
+    "alpha": 1000.0
+  }
+}

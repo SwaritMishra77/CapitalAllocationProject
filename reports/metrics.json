@@ -1,0 +1,310 @@
+{
+  "protocol": {
+    "target": "next fiscal year capex / next fiscal year revenue",
+    "split": {
+      "training_labels_before": "2022-01-01",
+      "validation_predictions_from": "2022-01-01",
+      "validation_predictions_before": "2023-01-01",
+      "validation_labels_before": "2024-01-01",
+      "test_predictions_from": "2024-01-01",
+      "test_predictions_before": "2026-01-01"
+    },
+    "study_status": "retrospective exploratory audit revision; earlier test results were inspected",
+    "primary_hypothesis": "adding frozen filing embeddings reduces held-out MAE relative to the same numeric residual ridge without text",
+    "transformer_executed": true,
+    "gru_executed": true,
+    "source_panel_sha256": "bca122bae7e95a2aeec579a6760f94972e5d4305b44834509f547725eae604e0"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.8.0",
+    "torch": "2.5.1+cpu",
+    "transformers": "4.46.3"
+  },
+  "cohorts": {
+    "all": {
+      "validation_selected_numeric": "numeric_ridge",
+      "counts": {
+        "train": 751,
+        "validation": 93,
+        "test": 134,
+        "test_companies": 92
+      },
+      "models": {
+        "persistence": {
+          "n": 134,
+          "mae_pp": 0.48550651757291774,
+          "rmse_pp": 0.7328068402938226
+        },
+        "sector_median": {
+          "n": 134,
+          "mae_pp": 1.099286143132198,
+          "rmse_pp": 1.6147315548840593
+        },
+        "numeric_ridge": {
+          "n": 134,
+          "mae_pp": 0.5783406629693942,
+          "rmse_pp": 0.8073623921589163,
+          "validation_choice": {
+            "alpha": 100.0
+          },
+          "interval_90": {
+            "validation_quantile_pp": 1.2973798163515058,
+            "coverage": 0.917910447761194,
+            "mean_width_pp": 2.5947596327030116,
+            "note": "validation residual diagnostic; validation also chose hyperparameters, so no formal coverage guarantee"
+          }
+        },
+        "numeric_residual_ridge": {
+          "n": 134,
+          "mae_pp": 0.4724899703677581,
+          "rmse_pp": 0.7057911330538432,
+          "validation_choice": {
+            "alpha": 1000.0
+          }
+        },
+        "numeric_tree": {
+          "n": 134,
+          "mae_pp": 0.597465398375564,
+          "rmse_pp": 0.8874669118016933,
+          "validation_choice": {
+            "max_depth": 4
+          }
+        },
+        "numeric_residual_tree": {
+          "n": 134,
+          "mae_pp": 0.5742932986731122,
+          "rmse_pp": 0.8313163519389174,
+          "validation_choice": {
+            "max_depth": 4
+          }
+        },
+        "numeric_gru": {
+          "n": 134,
+          "mae_pp": 0.8278158096504914,
+          "rmse_pp": 1.0572068333510785,
+          "validation_choice": {
+            "ensemble": "equal mean",
+            "runs": [
+              {
+                "seed": 17,
+                "early_stop_epoch": 18,
+                "max_epochs": 80,
+                "hidden": 16,
+                "max_history_filings": 3
+              },
+              {
+                "seed": 41,
+                "early_stop_epoch": 60,
+                "max_epochs": 80,
+                "hidden": 16,
+                "max_history_filings": 3
+              },
+              {
+                "seed": 73,
+                "early_stop_epoch": 45,
+                "max_epochs": 80,
+                "hidden": 16,
+                "max_history_filings": 3
+              }
+            ]
+          }
+        }
+      },
+      "availability_audit": {
+        "latest_training_label": "2021-12-21",
+        "earliest_validation_prediction": "2022-01-25",
+        "latest_validation_label": "2023-12-20",
+        "earliest_test_prediction": "2024-01-23"
+      },
+      "validation_mae_pp": {
+        "persistence": 0.5624339882044141,
+        "sector_median": 1.02523585995309,
+        "numeric_ridge": 0.5532278060310305,
+        "numeric_residual_ridge": 0.5661946832670648,
+        "numeric_tree": 0.6625914793465902,
+        "numeric_residual_tree": 0.6464932256015171,
+        "numeric_gru": 0.6382751383692834
+      }
+    },
+    "text": {
+      "validation_selected_numeric": "persistence",
+      "counts": {
+        "train": 86,
+        "validation": 23,
+        "test": 32,
+        "test_companies": 23
+      },
+      "models": {
+        "persistence": {
+          "n": 32,
+          "mae_pp": 0.4630880493615797,
+          "rmse_pp": 0.6048901556746317
+        },
+        "sector_median": {
+          "n": 32,
+          "mae_pp": 1.2124023784451134,
+          "rmse_pp": 1.7622041702484639
+        },
+        "numeric_ridge": {
+          "n": 32,
+          "mae_pp": 0.6695545707910697,
+          "rmse_pp": 0.8253517371105242,
+          "validation_choice": {
+            "alpha": 10.0
+          },
+          "interval_90": {
+            "validation_quantile_pp": 1.6013158578129363,
+            "coverage": 0.9375,
+            "mean_width_pp": 3.2026317156258726,
+            "note": "validation residual diagnostic; validation also chose hyperparameters, so no formal coverage guarantee"
+          }
+        },
+        "numeric_residual_ridge": {
+          "n": 32,
+          "mae_pp": 0.45359716695294966,
+          "rmse_pp": 0.588475909410163,
+          "validation_choice": {
+            "alpha": 10000.0
+          }
+        },
+        "numeric_tree": {
+          "n": 32,
+          "mae_pp": 0.8307234299629935,
+          "rmse_pp": 1.0913788105702622,
+          "validation_choice": {
+            "max_depth": 2
+          }
+        },
+        "numeric_residual_tree": {
+          "n": 32,
+          "mae_pp": 0.6225368546978478,
+          "rmse_pp": 0.824411998876591,
+          "validation_choice": {
+            "max_depth": 2
+          }
+        },
+        "numeric_gru": {
+          "n": 32,
+          "mae_pp": 0.9449594967437959,
+          "rmse_pp": 1.175388166630797,
+          "validation_choice": {
+            "ensemble": "equal mean",
+            "runs": [
+              {
+                "seed": 17,
+                "early_stop_epoch": 6,
+                "max_epochs": 80,
+                "hidden": 16,
+                "max_history_filings": 3
+              },
+              {
+                "seed": 41,
+                "early_stop_epoch": 78,
+                "max_epochs": 80,
+                "hidden": 16,
+                "max_history_filings": 3
+              },
+              {
+                "seed": 73,
+                "early_stop_epoch": 79,
+                "max_epochs": 80,
+                "hidden": 16,
+                "max_history_filings": 3
+              }
+            ]
+          }
+        },
+        "text_tfidf": {
+          "n": 32,
+          "mae_pp": 0.8181995954543466,
+          "rmse_pp": 1.0532926013699175,
+          "validation_choice": {
+            "alpha": 0.1
+          }
+        },
+        "numeric_plus_tfidf": {
+          "n": 32,
+          "mae_pp": 0.6693741381964021,
+          "rmse_pp": 0.825803042177656,
+          "validation_choice": {
+            "alpha": 10.0
+          }
+        },
+        "transformer_text": {
+          "n": 32,
+          "mae_pp": 1.0377709664157853,
+          "rmse_pp": 1.3098587587322175,
+          "validation_choice": {
+            "alpha": 100.0
+          }
+        },
+        "numeric_plus_transformer": {
+          "n": 32,
+          "mae_pp": 0.4325888819932828,
+          "rmse_pp": 0.575997172454941,
+          "validation_choice": {
+            "alpha": 10000.0
+          }
+        }
+      },
+      "availability_audit": {
+        "latest_training_label": "2021-12-16",
+        "earliest_validation_prediction": "2022-01-27",
+        "latest_validation_label": "2023-12-15",
+        "earliest_test_prediction": "2024-01-25"
+      },
+      "validation_mae_pp": {
+        "persistence": 0.5969389866988917,
+        "sector_median": 1.3246008330786536,
+        "numeric_ridge": 0.6494275069666445,
+        "numeric_residual_ridge": 0.6243488024194355,
+        "numeric_tree": 0.6869442447383525,
+        "numeric_residual_tree": 0.7119354717173028,
+        "numeric_gru": 0.7764730911812895,
+        "text_tfidf": 0.8668132296303027,
+        "numeric_plus_tfidf": 0.6431016552698154,
+        "transformer_text": 1.02383587766268,
+        "numeric_plus_transformer": 0.635325202428616
+      }
+    }
+  },
+  "transformer": {
+    "model": "ProsusAI/finbert",
+    "revision": "0bc2ac10dda6929bcb1f77ccc43c7ec5c424f031",
+    "pooling": "masked token mean then equal chunk mean",
+    "tokens_per_chunk": 256,
+    "max_chunks": 4,
+    "fine_tuned": false
+  },
+  "hypothesis_test": {
+    "comparison": "baseline minus candidate absolute error; positive favors candidate",
+    "n_rows": 32,
+    "n_companies": 23,
+    "improvement_pp": 0.02100828495966682,
+    "cluster_bootstrap_95_ci_pp": [
+      -0.004403210216440795,
+      0.044337632065190424
+    ],
+    "two_sided_cluster_sign_flip_p": 0.1231938403079846,
+    "seed": 41,
+    "replicates": 20000,
+    "baseline": "numeric_residual_ridge"
+  },
+  "benchmark_comparison": {
+    "comparison": "baseline minus candidate absolute error; positive favors candidate",
+    "n_rows": 32,
+    "n_companies": 23,
+    "improvement_pp": 0.030499167368296762,
+    "cluster_bootstrap_95_ci_pp": [
+      -0.014902250899826608,
+      0.07528017992763077
+    ],
+    "two_sided_cluster_sign_flip_p": 0.21563921803909805,
+    "seed": 41,
+    "replicates": 20000,
+    "baseline": "persistence"
+  }
+}

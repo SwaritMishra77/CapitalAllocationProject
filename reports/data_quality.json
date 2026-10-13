@@ -1,0 +1,29 @@
+{
+  "rows": 1163,
+  "companies": 99,
+  "text_rows": 187,
+  "checks": {
+    "unique_company_year": true,
+    "unique_id": true,
+    "positive_revenue": true,
+    "positive_target_revenue": true,
+    "nonnegative_capex": true,
+    "source_precedes_target_filing": true,
+    "source_fiscal_end_precedes_filing": true,
+    "target_fiscal_end_precedes_filing": true,
+    "annual_target_gap": true,
+    "capex_rate_reconciles": true,
+    "target_rate_reconciles": true,
+    "text_and_source_hash_coincide": true
+  },
+  "revenue_source_tags": {
+    "SalesRevenueNet": 365,
+    "RevenueFromContractWithCustomerExcludingAssessedTax": 364,
+    "Revenues": 347,
+    "SalesRevenueGoodsNet": 87
+  },
+  "capex_source_tags": {
+    "PaymentsToAcquirePropertyPlantAndEquipment": 946,
+    "PaymentsToAcquireProductiveAssets": 217
+  }
+}
